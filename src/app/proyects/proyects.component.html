@@ -1,1 +1,17 @@
-<p>proyects works!</p>
+<div class="row">
+    <h1 class="display-4 fw-bold lh-1">Proyects</h1>
+    <div class="col-sm-6 mb-5 " *ngFor="let proyect of proyects">
+        <div class="card" style="width: 30rem;">
+            <img [src]="proyect.cardImg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{proyect.name}}</h5>
+                <p class="card-text">{{proyect.desc}}&nbsp;<span class="badge text-bg-info">{{proyect.lenguage}}</span>
+                </p>
+                <a [href]="proyect.url" class="btn btn-primary">{{proyect.verEn}}</a>
+            </div>
+            <div class="card-footer text-body-secondary">
+                {{proyect.date}}
+            </div>
+        </div>
+    </div>
+</div>
