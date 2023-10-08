@@ -1,0 +1,16 @@
+<div class="row">
+    <h1 class="display-4 fw-bold lh-1">Skills</h1>
+    <div class="col-sm-4 mb-3" *ngFor="let image of images">
+        <div class="card" style="width: 25rem;">
+            <div class="card-body ">
+                <div class="p-2"><img [src]="image.url" [width]="image.size" class="rounded float-start"
+                        [alt]="image.name">
+                </div>
+                <h5 class="card-title fs-4">{{image.name}}:</h5>
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar float-end {{image.barColor}}" [style.width]="image.progress">{{image.progress}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
