@@ -8,6 +8,17 @@ import { Component } from '@angular/core';
 export class ProyectsComponent {
   proyects: any[] = [
     {
+      name: 'Blog - myTuto',
+      cardImg: './../../assets/img/myTuto.png',
+      desc: 'My blog, where I am trying to transmit my basic knowledge to other people. ',
+      url: 'https://xxchave2xx.github.io/myTuto/',
+      contributors: 'Raúl Chávez',
+      date: '14 de Septiembre del 2023',
+      lenguage: 'Hugo & Coder',
+      classe: 'text-bg-secondary',
+      verEn: 'Web',
+    },
+    {
       name: 'Gallery_API',
       cardImg: './../../assets/img/gallery_api.png',
       desc: 'Perform an api that has the following requirements: Enable an endpoint to store an image with corresponding title and description, Enable an endpoint to get all stored images, Enable an endpoint to delete a specific image and Enable an endpoint to update title and description of an image.',
@@ -15,8 +26,8 @@ export class ProyectsComponent {
       contributors: 'Raúl Chávez',
       date: '18 de Enero del 2023',
       lenguage: 'TypeScript',
-      classe: 'tag is-info',
-      verEn: 'Github',
+      classe: 'text-bg-info',
+      verEn: 'GitHub',
     },
     {
       name: 'Raul Chavez - Portfolio',
@@ -27,7 +38,7 @@ export class ProyectsComponent {
       contributors: 'Raúl Chávez',
       date: '20 de Mayo del 2022',
       lenguage: 'Vue',
-      classe: 'tag is-primary',
+      classe: 'text-bg-success',
       verEn: 'Github',
     },
     {
@@ -39,7 +50,7 @@ export class ProyectsComponent {
       contributors: 'Raúl Chávez',
       date: '4 de Mayo del 2022',
       lenguage: 'JavaScript',
-      classe: 'tag is-warning',
+      classe: 'text-bg-warning',
       verEn: 'Github',
     },
     {
@@ -50,7 +61,7 @@ export class ProyectsComponent {
       contributors: 'Raúl Chávez',
       date: '22 de Marzo del 2022',
       lenguage: 'HTML, CSS & JavaScript',
-      classe: 'tag is-primary',
+      classe: 'text-bg-danger',
       verEn: 'Web',
     },
     {
@@ -61,7 +72,7 @@ export class ProyectsComponent {
       contributors: 'Raúl Chávez and Marcelo Ramírez',
       date: '8 de Enero del 2021',
       lenguage: 'PHP',
-      classe: 'tag is-info',
+      classe: 'text-bg-info',
       verEn: 'Github',
     }
   ];

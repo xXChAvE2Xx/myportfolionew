@@ -5,9 +5,9 @@
             <img [src]="proyect.cardImg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{proyect.name}}</h5>
-                <p class="card-text">{{proyect.desc}}&nbsp;<span class="badge text-bg-info">{{proyect.lenguage}}</span>
+                <p class="card-text">{{proyect.desc}}&nbsp;<span class="badge {{proyect.classe}}">{{proyect.lenguage}}</span>
                 </p>
-                <a [href]="proyect.url" class="btn btn-primary">{{proyect.verEn}}</a>
+                <a [href]="proyect.url" class="btn btn-primary" target="_blank">{{proyect.verEn}}</a>
             </div>
             <div class="card-footer text-body-secondary">
                 {{proyect.date}}
